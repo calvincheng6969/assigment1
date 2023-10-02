@@ -1,0 +1,23 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<!--<img src="img/logo.png" alt="logo">-->
+
+<main class="ontainer">
+  <div class="jumbotron">
+    <body>
+      <header>
+        <h1>Welcome to My Portfolio</h1>
+      </header>
+
+      <main>
+        <p>Hello, I'm <%= yourName %>.</p>
+        <p>Explore my projects and learn more about me!</p>
+        <a href="/about">About Me</a>
+        <a href="/projects">Projects</a>
+      </main>
+    </body>
+  </div>
+
+  <%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+  %>
+</main>

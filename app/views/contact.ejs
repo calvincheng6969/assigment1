@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<!--<img src="img/logo.png" alt="logo">-->
+
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <nav>
+    <!-- Include your navigation bar here -->
+    <!-- Example: <% include navbar.ejs %> -->
+  </nav>
+  <main>
+    <h2><%= yourLegalName %></h2>
+    <img src="headshot.jpg" alt="Your Photo" />
+    <p><%= aboutParagraph %></p>
+    <a href="/resume.pdf">Download Resume (PDF)</a>
+  </main>
+
+  <%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+  %>
+</body>

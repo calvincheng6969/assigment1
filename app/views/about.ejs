@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs') %> <%- include('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <header>
+      <h1>About Me</h1>
+    </header>
+
+    <div class="about-me">
+      <img class="my-face" src="img/Myself.jpg" alt="My Photo" />
+      <div class="about-content">
+        <p>
+          Hello everyone! I am Cheng Ho Lam, a Software Engineering Technician
+          at Centennial College.
+        </p>
+        <h2><%= yourLegalName %></h2>
+        <p><%= aboutParagraph %></p>
+        <a href="/resume.pdf">Download Resume (PDF)</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
