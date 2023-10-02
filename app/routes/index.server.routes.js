@@ -10,6 +10,10 @@ router.get("/", function (req, res, next) {
   });
 });
 
+router.get("/index", function (req, res) {
+  res.redirect("/");
+});
+
 router.get("/about", function (req, res, next) {
   res.render("about", {
     title: "About",
