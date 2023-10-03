@@ -13,55 +13,87 @@
     />
 
     <style>
-      ul.navbar-max {
-        list-style: none; /* Remove the bullet */
-        display: inline; /* Display the list items inline */
-        float: right;
-        font-size: 20px;
+      li {
+        color: #fbf7f7;
       }
-
-      ul.navbar-max li {
-        display: inline-block; /* Make the list items display inline */
+      /* Keep specific images in color and adjust size */
+      img.color-photo {
+        filter: none; /* Remove grayscale for this image */
+        max-width: 50%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
       }
-      a:link {
-        text-decoration: none;
-      }
-
-      a:visited {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-      }
-
-      a:active {
-        text-decoration: none;
-      }
-
-      html,
-      body {
-        height: 100%;
+      /* Reset some default styles */
+      * {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
+      /* Apply black and white color scheme */
       body {
-        display: flex;
-        flex-direction: column;
+        background-color: #fff; /* White background */
+        color: #000000; /* Black text */
+        font-family: Arial, sans-serif; /* Change the font-family as needed */
+        font-size: 16px; /* Adjust the base font size as needed */
       }
 
-      main {
-        flex: 1;
+      /* Modify headings font size */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 24px; /* Adjust heading font sizes as needed */
       }
 
+      /* Apply grayscale to images and set max-width */
+      img {
+        filter: grayscale(100%);
+        max-width: 100%; /* Ensure images don't exceed their container's width */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      /* Style the jumbotron */
+      .jumbotron {
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Style links */
+      a {
+        color: #757575; /* Black links */
+        text-decoration: none; /* Remove underline */
+      }
+
+      /* Style the navbar */
+      .navbar {
+        background-color: #000; /* Black navbar background */
+      }
+
+      .navbar-brand {
+        color: #fff; /* White navbar text */
+      }
+
+      .navbar-toggler-icon {
+        background-color: #fff; /* White navbar toggler icon */
+      }
+
+      .navbar-nav .nav-link {
+        color: #fff; /* White navbar links */
+      }
+
+      /* Style the footer */
       footer {
         background-color: #343a40;
-        color: #ffffff;
-        padding: 10px;
+        color: #fff;
+        padding: 0%;
+        margin: 0%;
       }
 
       footer .navbar-text {
-        margin-bottom: 0;
+        margin-bottom: 10;
+        font-size: medium;
       }
     </style>
   </head>
